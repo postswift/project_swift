@@ -7,14 +7,20 @@
 //
 
 import UIKit
+import XCoordinator
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var gotoLoginScreen: UIButton!
+    var route: UnownedRouter<UserListRoute>!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
     }
+    
 
-
+    @IBAction func navigateLogin(_ sender: Any) {
+        route.trigger(.login)
+    }
+    
 }
 

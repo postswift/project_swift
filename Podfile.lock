@@ -1,0 +1,30 @@
+PODS:
+  - R.swift (5.3.1):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - RxSwift (5.1.1)
+  - XCoordinator/Core (2.0.7)
+  - XCoordinator/RxSwift (2.0.7):
+    - RxSwift (~> 5.0)
+    - XCoordinator/Core
+
+DEPENDENCIES:
+  - R.swift
+  - XCoordinator/RxSwift (~> 2.0)
+
+SPEC REPOS:
+  trunk:
+    - R.swift
+    - R.swift.Library
+    - RxSwift
+    - XCoordinator
+
+SPEC CHECKSUMS:
+  R.swift: 56ec7e3aef34b9eee47a659e42462db2c1cc5ac3
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
+
+PODFILE CHECKSUM: 863d4ca99ad1931162dd5ae2a39b2335a2dabb86
+
+COCOAPODS: 1.10.0

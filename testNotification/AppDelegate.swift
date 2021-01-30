@@ -5,16 +5,22 @@
 //  Created by resopt on 1/30/21.
 //  Copyright © 2021 resopt. All rights reserved.
 //
-
+import XCoordinator
 import UIKit
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    let window = UIWindow()
+    var router:StrongRouter<UserListRoute>!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        router = ListUserCoodinator().strongRouter
+        router.setRoot(for: window)
+  
+  
         return true
     }
 
